@@ -1,6 +1,10 @@
+/**
+ * A stack class in a fixed capacity but only for String 
+ * 
+ **/
 package chapter1;
 
-public class FixedCapacityStack {
+public class FixedCapacityStackOfString {
 
 	private String[] stack;
 	// The pointer of the stack
@@ -8,7 +12,7 @@ public class FixedCapacityStack {
 	// The capacity of the stack, i.e., the length of the array
 	private int cap;
 
-	public FixedCapacityStack(int cap) {
+	public FixedCapacityStackOfString(int cap) {
 		this.cap = cap;
 		stack = new String[cap];
 	}
