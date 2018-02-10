@@ -25,6 +25,18 @@ public class InsertionSort {
 		a_j = temp;
 	}
 
+	/**
+	 * Print the array
+	 * 
+	 * @param a
+	 */
+	public static void show(Comparable[] a) {
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i] + " ");
+		}
+		System.out.println();
+	}
+
 	private static boolean isSorted(Comparable[] a) {
 		for (int i = 0; i < a.length - 1; i++) {
 			if (less(a[i + 1], a[i]))
